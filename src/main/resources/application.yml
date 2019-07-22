@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://0.0.0.0:54322/testdb
+    username: docker
+    password: 123456789
+  application:
+    name: git-api-integration
+
+server:
+  port: 8080
